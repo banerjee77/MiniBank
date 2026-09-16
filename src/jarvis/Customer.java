@@ -2,9 +2,9 @@ package jarvis;
 
 public class Customer {
 	
-	int customerId;
-	String customerName;
-	String customerEmail;
+	private int customerId;
+	private String customerName;
+	private String customerEmail;
 	
 	public Customer(int customerId, String customerName, String customerEmail) {
 		this.customerId = customerId;
@@ -17,5 +17,18 @@ public class Customer {
 		System.out.println("Name: " + customerName);
 		System.out.println("Email: " + customerEmail);
 	}
+	
+	public int getCustomerId() {
+		return customerId;
+	}
+	
+	public String getCustomerName() {
+		return customerName;
+	}
+	
+	public String getCustomerEmail() {
+		return customerEmail;
+	}
 
 }
+

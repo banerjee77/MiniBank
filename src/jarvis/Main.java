@@ -11,7 +11,7 @@ public class Main {
 //		Printing the account details
 		System.out.println("Account Number: " + a1.getAccountNumber());
 		System.out.println("Balance: " + a1.getBalance());
-		System.out.println("Customer: " + a1.getCustomer().customerName);
+		System.out.println("Customer: " + a1.getCustomer().getCustomerName());
 		
 //		Calling the deposit method
 		a1.deposit(5000);
