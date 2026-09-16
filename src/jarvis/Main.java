@@ -12,6 +12,9 @@ public class Main {
 		System.out.println("Account Number: " + a1.accountNumber);
 		System.out.println("Balance: " + a1.balance);
 		System.out.println("Customer: " + a1.customer.customerName);
+		
+//		Calling the deposit method
+		a1.deposit(5000);
 	}
 
 }
