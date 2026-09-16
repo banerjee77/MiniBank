@@ -6,7 +6,7 @@ public class Main {
 		Customer c1 = new Customer(101, "Rahul", "rahul1997@icici.com");
 		c1.getCustomerData();
 		
-		Account a1 = new Account(5001, 10000, c1);
+		Account a1 = new SavingsAccount(5001, 10000, c1);
 		
 //		Printing the account details
 		System.out.println("Account Number: " + a1.getAccountNumber());
