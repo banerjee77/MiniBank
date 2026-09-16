@@ -12,7 +12,7 @@ public class Customer {
 		this.customerEmail = customerEmail;
 	}
 	
-	void getCustomerData() {
+	public void getCustomerData() {
 		System.out.println("Customer ID: " + customerId);
 		System.out.println("Name: " + customerName);
 		System.out.println("Email: " + customerEmail);
@@ -31,4 +31,5 @@ public class Customer {
 	}
 
 }
+
 
