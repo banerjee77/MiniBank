@@ -12,6 +12,18 @@ public class Account {
 		this.customer = customer;
 	}
 	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+	
+	public double getBalance() {
+		return balance;
+	}
+	
+	public Customer getCustomer() {
+		return customer;
+	}
+	
 	public void deposit(double amount) {
 		balance = balance + amount;
 		System.out.println("Current Balance: " + balance);

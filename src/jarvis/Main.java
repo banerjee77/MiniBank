@@ -9,9 +9,9 @@ public class Main {
 		Account a1 = new Account(5001, 10000, c1);
 		
 //		Printing the account details
-		System.out.println("Account Number: " + a1.accountNumber);
-		System.out.println("Balance: " + a1.balance);
-		System.out.println("Customer: " + a1.customer.customerName);
+		System.out.println("Account Number: " + a1.getAccountNumber());
+		System.out.println("Balance: " + a1.getBalance());
+		System.out.println("Customer: " + a1.getCustomer().customerName);
 		
 //		Calling the deposit method
 		a1.deposit(5000);
@@ -20,10 +20,9 @@ public class Main {
 		try {
 			a1.withdraw(20000);
 		} catch (IllegalArgumentException e) {
-			// TODO: handle exception
-			System.out.println("Current balance is " + a1.balance);
 			System.out.println("Balance is less than the withdrawal amount.");
 		}
+		
 	}
 
 }
