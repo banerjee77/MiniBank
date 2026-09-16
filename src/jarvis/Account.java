@@ -16,5 +16,13 @@ public class Account {
 		balance = balance + amount;
 		System.out.println("Current Balance: " + balance);
 	}
+	
+	public void withdraw(double amount) {
+		if (balance >= amount) {
+			balance = balance - amount;
+		} else {
+			throw new IllegalArgumentException ("Balance is less than the withdrawal amount...");
+		}
+	}
 
 }
