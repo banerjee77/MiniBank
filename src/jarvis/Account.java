@@ -1,6 +1,6 @@
 package jarvis;
 
-public class Account {
+public abstract class Account {
 	
 	private int accountNumber;
 	private double balance;
@@ -39,3 +39,4 @@ public class Account {
 	}
 
 }
+
