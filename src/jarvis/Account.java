@@ -11,5 +11,10 @@ public class Account {
 		this.balance = balance;
 		this.customer = customer;
 	}
+	
+	public void deposit(double amount) {
+		balance = balance + amount;
+		System.out.println("Current Balance: " + balance);
+	}
 
 }
