@@ -18,7 +18,7 @@ public class Main {
 		
 //		Calling the withdraw method
 		try {
-			a1.withdraw(3000);
+			a1.withdraw(20000);
 		} catch (IllegalArgumentException e) {
 			// TODO: handle exception
 			System.out.println("Current balance is " + a1.balance);

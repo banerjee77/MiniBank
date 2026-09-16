@@ -2,9 +2,9 @@ package jarvis;
 
 public class Account {
 	
-	int accountNumber;
-	double balance;
-	Customer customer;
+	private int accountNumber;
+	private double balance;
+	private Customer customer;
 	
 	public Account(int accountNumber, double balance, Customer customer) {
 		this.accountNumber = accountNumber;
