@@ -20,6 +20,7 @@ public class Account {
 	public void withdraw(double amount) {
 		if (balance >= amount) {
 			balance = balance - amount;
+			System.out.println("Balance after withdrawal: " + balance);
 		} else {
 			throw new IllegalArgumentException ("Balance is less than the withdrawal amount...");
 		}

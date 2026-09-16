@@ -15,6 +15,16 @@ public class Main {
 		
 //		Calling the deposit method
 		a1.deposit(5000);
+		
+//		Calling the withdraw method
+		try {
+			a1.withdraw(3000);
+		} catch (IllegalArgumentException e) {
+			// TODO: handle exception
+			System.out.println("Current balance is " + a1.balance);
+			System.out.println("Balance is less than the withdrawal amount.");
+		}
 	}
 
 }
+
