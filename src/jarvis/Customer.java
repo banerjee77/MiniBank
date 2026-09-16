@@ -11,5 +11,11 @@ public class Customer {
 		this.customerName = customerName;
 		this.customerEmail = customerEmail;
 	}
+	
+	void getCustomerData() {
+		System.out.println("Customer ID: " + customerId);
+		System.out.println("Name: " + customerName);
+		System.out.println("Email: " + customerEmail);
+	}
 
 }
