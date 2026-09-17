@@ -7,14 +7,19 @@ public class Main {
 		c1.getCustomerData();
 		
 		Account a1 = new SavingsAccount(5001, 10000, c1);
+		Account a2 = new CurrentAccount(5002, 20000, c1);
 		
 //		Printing the account details
 		System.out.println("Account Number: " + a1.getAccountNumber());
 		System.out.println("Balance: " + a1.getBalance());
 		
 //		Calling the calculateInterest method
-		double calculateInterest = a1.calculateInterest(5);
-		System.out.println("Interest at 5%: " + calculateInterest);
+		double interest1 = a1.calculateInterest(5);
+		System.out.println("Interest at 5%: " + interest1);
+		
+//		Calling the calculateInterest method from CurrentAccount class
+		double interest2 = a2.calculateInterest(5);
+		System.out.println("Interest at 5%: " + interest2);
 		
 		System.out.println("Customer: " + a1.getCustomer().getCustomerName());
 		
