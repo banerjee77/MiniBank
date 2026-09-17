@@ -13,6 +13,8 @@ public class Main {
 		System.out.println("Balance: " + a1.getBalance());
 		
 //		Calling the calculateInterest method
+		double calculateInterest = a1.calculateInterest(5);
+		System.out.println("Interest at 5%: " + calculateInterest);
 		
 		System.out.println("Customer: " + a1.getCustomer().getCustomerName());
 		
