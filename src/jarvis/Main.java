@@ -34,7 +34,7 @@ public class Main {
 		}
 		
 //		Calling CurrentAccount class withdraw() method
-		a2.withdraw(30001);
+		a2.withdraw(2000);
 		System.out.println("Current Balance after withdrawal: " + a2.getBalance());
 		
 	}
