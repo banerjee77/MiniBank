@@ -11,6 +11,9 @@ public class Main {
 //		Printing the account details
 		System.out.println("Account Number: " + a1.getAccountNumber());
 		System.out.println("Balance: " + a1.getBalance());
+		
+//		Calling the calculateInterest method
+		
 		System.out.println("Customer: " + a1.getCustomer().getCustomerName());
 		
 //		Calling the deposit method

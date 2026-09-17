@@ -37,6 +37,8 @@ public abstract class Account {
 			throw new IllegalArgumentException ("Balance is less than the withdrawal amount...");
 		}
 	}
+	
+	public abstract double calculateInterest(double rate);
 
 }
 
