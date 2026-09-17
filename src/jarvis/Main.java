@@ -7,7 +7,7 @@ public class Main {
 		c1.getCustomerData();
 		
 		Account a1 = new SavingsAccount(5001, 10000, c1);
-		Account a2 = new CurrentAccount(5002, 20000, c1);
+		Account a2 = new CurrentAccount(5002, 20000, c1, 10000);
 		
 //		Printing the account details
 		System.out.println("Account Number: " + a1.getAccountNumber());
@@ -28,10 +28,14 @@ public class Main {
 		
 //		Calling the withdraw method
 		try {
-			a1.withdraw(20000);
+			a1.withdraw(25000);
 		} catch (IllegalArgumentException e) {
 			System.out.println("Balance is less than the withdrawal amount.");
 		}
+		
+//		Calling CurrentAccount class withdraw() method
+		a2.withdraw(30001);
+		System.out.println("Current Balance after withdrawal: " + a2.getBalance());
 		
 	}
 

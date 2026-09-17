@@ -14,5 +14,14 @@ public class CurrentAccount extends Account {
 	public double calculateInterest(double rate) {
 		return 0;
 	}
+	
+	@Override
+	public void withdraw(double amount) {
+		if (getBalance() - amount < -overDraftAmount) {
+			throw new IllegalArgumentException("The amount exceeds the overdraft limit.");
+		}
+		
+		setBalance(getBalance() - amount);
+	}
 
 }

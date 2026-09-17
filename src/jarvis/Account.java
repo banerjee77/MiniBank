@@ -24,6 +24,10 @@ public abstract class Account {
 		return customer;
 	}
 	
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
 	public void deposit(double amount) {
 		balance = balance + amount;
 		System.out.println("Current Balance: " + balance);
